@@ -1,5 +1,5 @@
 
-// фйл решебник / справочник
+// фйл решебник / справочник JavaRush
 /* Создай объект типа Cat (кот), объект типа Dog (собака),
 объект типа Fish (рыбка) и объект типа Woman.
 Присвой каждому животному владельца (owner).
@@ -7,9 +7,9 @@
 */
 public class Solution {
     public static void main(String[] args) {
-        Woman woman = new Woman();
-       Cat cat = new Cat();
-       cat.owner = woman;
+        Woman woman = new Woman();// Первым создаем Обьект Владельца Womanб если этого не сделать то код изменится и
+       Cat cat = new Cat(); // придется сначала пррописать все обьекты, потом владельца и только потом присвоить питомцев владельцу.
+       cat.owner = woman; // только так мы сможем в таком порядке присвоить сразу пораметр .owner
        Dog dog = new Dog();
        dog.owner = woman;
        Fish fish = new Fish();
